@@ -36,7 +36,7 @@
 <p><img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" class="img-responsive">
 <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" alt="Threejs" class="img-responsive">
 <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" class="img-responsive"></p>
-<p><a href="https://exomus.github.io/docs/ng-three-starter-kit/v0.2.0/"><img src="https://exomus.github.io/docs/ng-three-starter-kit/v0.2.0/images/coverage-badge-documentation.svg" alt="Documentation" class="img-responsive"></a></p>
+<p><a href="https://exomus.github.io/docs/ng-three-starter-kit/v0.3.0/"><img src="https://exomus.github.io/docs/ng-three-starter-kit/v0.3.0/images/coverage-badge-documentation.svg" alt="Documentation" class="img-responsive"></a></p>
 <p><a href="https://sonarcloud.io/summary/new_code?id=Exomus_ng-three-starter-kit"><img src="https://sonarcloud.io/images/project_badges/sonarcloud-black.svg" alt="SonarCloud" class="img-responsive"></a></p>
 <p><a href="https://sonarcloud.io/summary/new_code?id=Exomus_ng-three-starter-kit"><img src="https://sonarcloud.io/api/project_badges/measure?project=Exomus_ng-three-starter-kit&metric=security_rating" alt="Security Rating" class="img-responsive"></a>
 <a href="https://sonarcloud.io/summary/new_code?id=Exomus_ng-three-starter-kit"><img src="https://sonarcloud.io/api/project_badges/measure?project=Exomus_ng-three-starter-kit&metric=sqale_rating" alt="Maintainability Rating" class="img-responsive"></a>
@@ -69,8 +69,15 @@ famous <a href="https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2
 </ul>
 </li>
 <li>Architecture of the project in many folders to keep it organized</li>
+<li>Debug UI integrated (equivalent to dat-gui) and easily accessible due to static singleton pattern</li>
+<li>Util service<ul>
 <li>Executes the animation loop and the resize outside the NgZone to avoid performance issues due to Angular&#39;s Change
 detection</li>
+<li>Information obtainable easily without painful constructor argument everywhere. (static method)</li>
+<li>Provides a PointerService to handle pointermove events and executes the pointermove callback of the engine outside
+the NgZone</li>
+</ul>
+</li>
 </ul>
 <h1 id="documentation">Documentation</h1>
 <h2 id="engine">Engine</h2>
