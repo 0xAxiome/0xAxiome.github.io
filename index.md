@@ -1,10 +1,10 @@
 # ng-three-starter-kit 
 
 ## Documentation
-- [v0.4.X](https://exomus.github.io/docs/ng-three-starter-kit/v0.4.0/)
-- [v0.3.X](https://exomus.github.io/docs/ng-three-starter-kit/v0.3.0/)
-- [v0.2.X](https://exomus.github.io/docs/ng-three-starter-kit/v0.2.0/)
-- [v0.1.X](https://exomus.github.io/docs/ng-three-starter-kit/v0.1.0/)
+- [v0.4.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.4.0/)
+- [v0.3.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.3.0/)
+- [v0.2.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.2.0/)
+- [v0.1.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.1.0/)
 
 ## SonarCloud (code static analyze)
 
@@ -13,4 +13,4 @@
 # three-geometry-welder
 
 ## Documentation
-- [v0.1.X](https://exomus.github.io/docs/three-geometry-welder/v0.1.0/)
+- [v0.1.X](https://0xAxiome.github.io/docs/three-geometry-welder/v0.1.0/)
