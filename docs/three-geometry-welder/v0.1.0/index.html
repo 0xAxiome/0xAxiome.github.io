@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>three-geometry-welder documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	   <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/dark.css">
+        <link rel="stylesheet" href="./styles/postmark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">three-geometry-welder documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<div align="center">
+    <br>
+    <h1>three-geometry-welder</h1>
+    <p>
+        <b>A customizable way of merging your buffer geometry</b>
+    </p>
+</div>
+<br>
+
+<h1 id="stack-🧰">Stack 🧰</h1>
+<p>
+    <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" alt="ThreeJS Badge">
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="Typescript Badge">
+</p>
+
+<ul>
+<li>Threejs (r145)</li>
+<li>@types/three (r144)</li>
+</ul>
+<h1 id="quick-start-🏁">Quick Start 🏁</h1>
+<p>➡️<a href="https://0xAxiome.github.io/"> Documentation </a>⬅️</p>
+<h2 id="how-to-use-this-library-🔧">How to use this library 🔧</h2>
+<p>Run <code>npm install three-geometry-welder</code></p>
+<p>Then you can use in your code:</p>
+<div><pre class="line-numbers"><code class="language-typescript">import { BufferGeometryWelder } from &quot;three-geometry-welder&quot;;
+
+//...
+
+const geometry = this.myMesh.geometry;
+
+const geometryWelder = new BufferGeometryWelder(geometry, false, 6); // The second and third parameter are optional.
+const destinationGeometry = geometryWelder.getMergedBufferGeometry();
+
+const myIndexedMesh = new Mesh(destinationGeometry, this.myMesh.material);
+this.myMesh.geometry.dispose(); //If you want to get rid of your old geometry not indexed.
+this.myMesh = myIndexedMesh;</code></pre></div><h1 id="special-thanks-💖">Special Thanks 💖</h1>
+<p>This code is a reworked one in typescript of <code>toIndexed()</code> method of <a href="https://github.com/Fyrestar">@Fyrestar</a>
+that you can find <a href="https://github.com/Fyrestar/THREE.BufferGeometry-toIndexed">here</a>.</p>
+<p>The code was hard to use in my Typescript project, I reworked, cleaned and made a service of it, to be easier to use. </p>
+<p>The code was left unmaintained, but it is really useful and works better than mergeVertices(). </p>
+<h1 id="features-🛠️">Features 🛠️</h1>
+<ul>
+<li>Enables to get an indexed geometry from a non indexed one.</li>
+<li>Can be on full set of attributes or only on the position attribute.</li>
+<li>The precision parameter enables you to simplify your geometry which can increase the performance of your app (with a tradeoff on the mesh accuracy: with a very low precision value, you will get a very low-poly mesh)</li>
+</ul>
+<h1 id="notes-🗒️">Notes 🗒️</h1>
+<p><strong>How is it different from mergeVertices() from the official ThreeJS library?:</strong></p>
+<p>It is meant to do the same job. I encountered a lot of problems with mergeVertices() and there is a lack of customization.
+For example, I tried to use mergeVertices() of a 3D scan, it was unsuccessful to do so, and also making all in the mesh. </p>
+<p>Here you can also change the behaviour of the welder if you don&#39;t want it to check the full set of attributes.</p>
+<h1 id="twitter-🐦">Twitter 🐦</h1>
+<p>You can reach me on Twitter:</p>
+<p><a href="https://twitter.com/0xAxiome"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" class="img-responsive"></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+
+       <script src="./js/menu-wc.js" defer></script>
+       <script nomodule src="./js/menu-wc_es5.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
