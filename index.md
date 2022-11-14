@@ -1,6 +1,7 @@
 # ng-three-starter-kit 
 
 ## Documentation
+- [v0.5.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.5.0/)
 - [v0.4.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.4.0/)
 - [v0.3.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.3.0/)
 - [v0.2.X](https://0xAxiome.github.io/docs/ng-three-starter-kit/v0.2.0/)
